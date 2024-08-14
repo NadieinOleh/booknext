@@ -1,0 +1,35 @@
+.feedback {
+  padding: 0 5% 160px;
+}
+
+.title {
+  color: #0b579d;
+  font-family: Roboto;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  margin-bottom: 40px;
+}
+
+.block {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 29px;
+
+  border-top: 1px solid #232323;
+  padding-top: 44px;
+}
+
+@media (max-width: 1000px) {
+  .feedback {
+    padding: 0 5% 80px;
+  }
+
+  .block {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

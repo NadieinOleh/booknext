@@ -1,0 +1,18 @@
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 50px 5% 70px;
+}
+
+@media (max-width: 800px) {
+  .header {
+    padding: 20px 5% 20px;
+  }
+
+  .header__button, .header__nav  {
+    display: none;
+  }
+}

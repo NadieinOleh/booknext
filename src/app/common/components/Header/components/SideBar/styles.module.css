@@ -1,0 +1,53 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #0B579D;
+  transition: left 0.3s ease-in-out;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.open {
+  right: 0;
+}
+
+.logo {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  flex: 1;
+}
+
+.close {
+  cursor: pointer;
+  color: white;
+  align-self: flex-end;
+}
+
+.sideBarList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+@media (min-width: 800px) {
+  .sideBarBlock {
+    display: none;
+  }
+
+  .button,
+  .navigation {
+    display: none;
+  }
+}

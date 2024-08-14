@@ -1,0 +1,28 @@
+.navList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+}
+
+.navItem {
+
+  color: #232323;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22.5px; 
+  text-transform: uppercase;
+}
+
+.color {
+  color: #232323; 
+}
+
+.colorMob {
+  color: #fff; 
+}
+
+.navItem:hover {
+  color: #009BFF; 
+}
