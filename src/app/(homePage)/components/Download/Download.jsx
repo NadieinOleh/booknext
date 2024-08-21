@@ -1,8 +1,10 @@
-import React from 'react';
+"use client";
 
-import Button from '@/common/components/Button/Button';
+import React from "react";
 
-import styles from './styles.module.css';
+import Button from "@/common/components/Button/Button";
+
+import styles from "./styles.module.css";
 
 const Download = () => {
   return (
@@ -31,7 +33,11 @@ const Download = () => {
             yola çıkarak, kişisel başarıya ulaşmanın sırlarını paylaşıyor ve
             Adaptasyon yeteneklerinizi geliştirmenizi sağlıyor.
           </p>
-          <Button text="PDF olarak indir" color={false} />
+          <Button
+            text="PDF olarak indir"
+            color={false}
+            href="/Mert_Yıldırım.pdf"
+          />
         </div>
       </div>
     </section>

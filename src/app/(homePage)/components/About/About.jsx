@@ -1,3 +1,5 @@
+"use client";
+
 import Button from "@/common/components/Button/Button";
 import Image from "next/image";
 import React from "react";
@@ -34,7 +36,11 @@ const About = () => {
 
         <div className={styles.buttonBlock}>
           <Button text={"Kitap sipariş et"} href={"#order"} color={true} />
-          <Button text={"PDF olarak indir"} color={false} />
+          <Button
+            text={"PDF olarak indir"}
+            color={false}
+            href="/Mert_Yıldırım.pdf"
+          />
         </div>
 
         <div>
@@ -67,7 +73,7 @@ const About = () => {
 
       <Image
         className={styles.aboutImg}
-        alt='about image'
+        alt="about image"
         width={548}
         height={956}
         src={"/book.png"}

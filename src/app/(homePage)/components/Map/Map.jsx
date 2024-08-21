@@ -1,49 +1,27 @@
-'use client';
-import React, { useEffect } from 'react';
-import { GoogleMap } from '@react-google-maps/api';
-import { Loader } from '@googlemaps/js-api-loader';
-import { MapProvider } from '../../../../../providers/MapProvider';
+"use client";
+import React, { useEffect } from "react";
+import { Loader } from "@googlemaps/js-api-loader";
 
-import styles from './styles.module.css';
+import styles from "./styles.module.css";
 
-export const defaultMapContainerStyle = {
-  width: '300px',
-  height: '647px',
-  borderRadius: '15px 0px 0px 15px',
-};
-
-const defaultMapCenter = {
-  lat: 39.9208,
-  lng: 32.8541,
-};
-
-const defaultMapZoom = 18;
-
-const defaultMapOptions = {
-  zoomControl: true,
-  tilt: 0,
-  gestureHandling: 'auto',
-  mapTypeId: 'satellite',
+const GoogleMap = () => {
+  return (
+    <div style={{ width: "100%" }}>
+      <iframe
+        width="100%"
+        height="400"
+        frameBorder="0"
+        scrolling="no"
+        marginHeight="0"
+        marginWidth="0"
+        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=FEVZ%C4%B0%20%C3%87AKMAK-2%20S%2037/20,%20K%C4%B1z%C4%B1lay+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+        allowFullScreen
+      />
+    </div>
+  );
 };
 
 const MapComponent = () => {
-  useEffect(() => {
-    const loader = new Loader({
-      apiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
-      version: 'weekly',
-      libraries: ['places'],
-    });
-
-    loader.load().then(() => {
-      const map = new google.maps.Map(document.getElementById('map'), {
-        center: { lat: -34.397, lng: 150.644 },
-        zoom: 8,
-      });
-    });
-  }, []);
-
-
-
   return (
     <div className={styles.mapContainer}>
       <h2 className={styles.title}>Temas etmek</h2>
@@ -53,17 +31,7 @@ const MapComponent = () => {
           <p className={styles.address}>FEVZİ ÇAKMAK-2 S 37/20, Kızılay</p>
           <p className={styles.email}>epicbookjourney@gmail.com</p>
         </div>
-        {/* <div className={styles.mapImg}> */}
-        <div id="map" style={{ width: '100%', height: '400px' }}></div>;
-          {/* <MapProvider>
-            <GoogleMap
-              mapContainerStyle={defaultMapContainerStyle}
-              center={defaultMapCenter}
-              zoom={defaultMapZoom}
-              options={defaultMapOptions}
-            ></GoogleMap>
-          </MapProvider> */}
-        {/* </div> */}
+        <GoogleMap />
       </div>
     </div>
   );

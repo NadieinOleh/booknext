@@ -26,9 +26,11 @@ const Footer = () => {
         </nav>
 
         <div className={styles.addressText}>
-          <p>Адрес: [Адрес вашего офиса или студии]</p>
-          <p>Телефон: +7 (XXX) XXX-XXXX</p>
-          <p>Email: info@yourrestaurantdesign.com</p>
+          <p>Adres: FEVZİ ÇAKMAK-2 S 37/20, Kızılay
+
+</p>
+          <p>Telefon: +90 532 123 4567</p>
+          <p>E-posta: info@yourrestaurantdesign.com</p>
         </div>
 
         <div className={styles.form}>

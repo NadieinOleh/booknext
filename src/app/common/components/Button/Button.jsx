@@ -8,11 +8,11 @@ const Button = ({
   text,
   width,
   color = true,
-  toggleSidebar = undefined,
+  handleOpenPDF = undefined,
   href = '#form',
 }) => {
   return (
-    <button onClick={toggleSidebar} style={{ width: width }}>
+    <button onClick={handleOpenPDF} style={{ width: width }}>
       <Link
         href={href}
         className={`${styles.button} ${color ? styles.color : styles.colorMob}`}
