@@ -1,7 +1,8 @@
 "use client";
 
 import Button from "@/common/components/Button/Button";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
+import Book from '../../../../../public/images/book.png'
 import React from "react";
 
 import styles from "./styles.module.css";
@@ -39,7 +40,7 @@ const About = () => {
           <Button
             text={"PDF olarak indir"}
             color={false}
-            href="/Mert_Yıldırım.pdf"
+            href="./Mert_Yıldırım.pdf"
           />
         </div>
 
@@ -71,12 +72,12 @@ const About = () => {
         </div>
       </div>
 
-      <Image
+      <ExportedImage
         className={styles.aboutImg}
         alt="about image"
         width={548}
         height={956}
-        src={"/book.png"}
+        src={Book}
       />
     </section>
   );

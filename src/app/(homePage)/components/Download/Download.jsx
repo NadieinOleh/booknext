@@ -36,7 +36,7 @@ const Download = () => {
           <Button
             text="PDF olarak indir"
             color={false}
-            href="/Mert_Yıldırım.pdf"
+            href="./Mert_Yıldırım.pdf"
           />
         </div>
       </div>

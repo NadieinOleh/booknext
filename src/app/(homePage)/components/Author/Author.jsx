@@ -1,11 +1,12 @@
-import Image from 'next/image';
+import ExportedImage from "next-image-export-optimizer";
+import Author from '../../../../../public/images/author.png'
 import styles from './styles.module.css';
 
 const YourComponent = () => (
   <section id='author' className={styles.author}>
     <div className={styles.block}>
       <div className={styles.imageWrapper}>
-        <Image className={styles.img} layout="fill" objectFit="cover" alt="author" src="/author.png" />
+        <ExportedImage className={styles.img} layout="fill" objectFit="cover" alt="author" src={Author} />
       </div>
 
       <div className={styles.textBlock}>

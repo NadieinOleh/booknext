@@ -29,7 +29,7 @@ const MapComponent = () => {
         <div className="">
           <p className={styles.start}>4.8</p>
           <p className={styles.address}>FEVZİ ÇAKMAK-2 S 37/20, Kızılay</p>
-          <p className={styles.email}>epicbookjourney@gmail.com</p>
+          <p className={styles.email}>constructiveartistry.com</p>
         </div>
         <GoogleMap />
       </div>

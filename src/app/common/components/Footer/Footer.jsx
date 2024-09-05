@@ -1,7 +1,8 @@
-import Image from 'next/image';
+import ExportedImage from "next-image-export-optimizer";
 import Link from 'next/link';
 import React from 'react';
 import Form from '../Form/Form';
+import Logo from '../../../../../public/images/Bookd.svg'
 
 import styles from './styles.module.css';
 
@@ -9,7 +10,7 @@ const Footer = () => {
   return (
     <footer id='footer' className={styles.footer}>
       <Link href="./">
-        <Image height={38} width={165} src="/Bookd.svg" alt="logo" />
+        <ExportedImage height={38} width={165} src={Logo} alt="logo" />
       </Link>
 
       <div className={styles.block}>
@@ -30,7 +31,7 @@ const Footer = () => {
 
 </p>
           <p>Telefon: +90 532 123 4567</p>
-          <p>E-posta: info@yourrestaurantdesign.com</p>
+          <p>E-posta: constructiveartistry.com</p>
         </div>
 
         <div className={styles.form}>

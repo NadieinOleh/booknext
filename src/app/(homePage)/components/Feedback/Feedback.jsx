@@ -1,5 +1,8 @@
 import React from 'react';
 import Cart from './components/Card/Card';
+import Cart1 from '../../../../../public/images/card1.png'
+import Cart2 from '../../../../../public/images/card2.png'
+import Cart3 from '../../../../../public/images/card3.png'
 
 import styles from './styles.module.css';
 
@@ -18,21 +21,21 @@ const Feedback = () => {
 
       <div className={styles.block}>
         <Cart
-          src={'/card1.png'}
+          src={Cart1}
           name="Elif A"
           age={'23 yıl'}
           text={textCard1}
           flex={false}
         />
         <Cart
-          src={'/card2.png'}
+          src={Cart2}
           name="Mehmet K"
           age={'55 yıl'}
           text={textCard2}
           flex={false}
         />
         <Cart
-          src={'/card3.png'}
+          src={Cart3}
           name="Olivia D"
           age={'27 yıl'}
           text={textCard3}

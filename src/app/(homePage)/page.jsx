@@ -20,8 +20,8 @@ export default function Home() {
         <Author />
         <Download />
         <Feedback />
-        <MapComponent />
         <Order />
+        <MapComponent />
       </main>
 
       <Footer />

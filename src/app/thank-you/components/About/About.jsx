@@ -1,6 +1,6 @@
 import Button from '@/common/components/Button/Button';
-import Image from 'next/image';
-import React from 'react';
+import ExportedImage from "next-image-export-optimizer";import React from 'react';
+import Book from '../../../../../public/images/book.png'
 
 import styles from './styles.module.css';
 
@@ -14,11 +14,11 @@ const About = () => {
         <Button text={'Geri'} color={true} href={'./'}/>
       </div>
 
-      <Image
+      <ExportedImage
         className={styles.aboutImg}
         width={548}
         height={956}
-        src={'/book.png'}
+        src={Book}
         alt='thank image'
       />
     </section>

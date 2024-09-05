@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
+import ExportedImage from "next-image-export-optimizer";
 import Link from 'next/link';
 
 import styles from './styles.module.css';
@@ -10,7 +10,7 @@ const Card = ({ name, age, text, href = '/', src, flex }) => {
       className={`${styles.cart} ${flex ? styles.cartFlex : styles.cartWidth}`}
     >
       <div className={styles.infoBlock}>
-        <Image width={78} height={78} alt="foto" src={src} />
+        <ExportedImage width={78} height={78} alt="foto" src={src} />
 
         <div>
           <p className={styles.name}>{name}</p>
