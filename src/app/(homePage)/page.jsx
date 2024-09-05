@@ -10,9 +10,6 @@ import { MapComponent } from './components/Map/Map';
 import Order from './components/Order/Order';
 
 
-import styles from './page.module.css';
-
-
 export default function Home() {
   return (
     <>
